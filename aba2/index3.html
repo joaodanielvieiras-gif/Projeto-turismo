@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="wih3h=device-wih3h, initial-scale=1">
+  <title>Lençois</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+  <div class="pagina">
+
+    <header class="topo">
+      <p class="local">Espaço inteiro: casa em Lençóis, Brasil/p>
+      <h1 class="titulo">Casa Sol | Refúgio de Luxo no Coração de Lençóis</h1>
+      <div class="topoLinha">
+        <p class="nota"><p>★ 4,6</p> · 18 avaliações · Preferido dos hóspedes</p>
+        <div class="acoes">
+          <button class="botao" onclick="compartilhar()">Compartilhar</button>
+          <button class="botao" id="botaoSalvar" onclick="salvar()">Salvar</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="intro">
+      <div class="colunaTexto">
+        <h2 class="secaoTitulo">Sobre o casa</h2>
+        <p class="texto">
+          - 2 Suítes: Uma suíte com cama de casal queen e outra com duas camas de solteiro, ambas climatizadas. 
+          - Sala de Jantar com Cozinha Americana: Espaço integrado e funcional.
+- Sala de TV com Ar Condicionado: sofá cama Perfeito para momentos de lazer e descanso.
+- 3 Lavabo: Conveniência para os hóspedes.
+- Lavanderia: Com máquina de lavar e secadora, além de sanitário de serviço.</p>
+        <p class="texto">À noite, fogueira de pedras e um céu cheio de estrelas.</p>
+      </div>
+
+      <div class="colunaDestaques">
+        <h2 class="secaoTitulo">Destaques</h2>
+        <ul class="destaques">
+          <li class="destaque">
+            <p class="destaqueTitulo">Terras altas da Chapada Diamantina</p>
+            Perto de trilhas para cachoeiras e da vila do Vale do Capão.
+          </li>
+          <li class="destaque">
+            <p class="destaqueTitulo">Privativo, com fogueira e rede</p>
+            Cozinha completa e vista para a serra do Morrão.
+          </li>
+          <li class="destaque">
+            <p class="destaqueTitulo">Aconchegante, limpo e confortável</p>
+            Os hóspedes destacam a limpeza e o conforto, e muitos querem voltar.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="galeria">
+      <button class="fotoPrincipal" onclick="abrirFotos(0)">
+        <img class="fotoGaleria" src="/seu feito/turismo2/img/68c244b0-a9ec-4790-9b9d-1e00aa5ea1c8.jpg" alt="Quarto do chalé com cama de casal e vista para a serra">
+      </button>
+      <div class="miniaturas">
+        <button class="miniatura" onclick="abrirFotos(1)">
+          <img class="fotoGaleria" src="/seu feito/turismo2/img/museu.jpg" alt="Chalé #03, foto 2">
+        </button>
+        <button class="miniatura" onclick="abrirFotos(2)">
+          <img class="fotoGaleria" src="/seu feito/turismo2/img/estacionamento-bosque.jpg" alt="Jardim e varandas dos chalés à noite">
+        </button>
+        <button class="miniatura" onclick="abrirFotos(3)">
+          <img class="fotoGaleria" src="/seu feito/turismo2/img/68c244b0-a9ec-4790-9b9d-1e00aa5ea1c8.jpg" alt="Chalé #03, foto 4">
+        </button>
+        <button class="miniatura" onclick="abrirFotos(4)">
+          <img class="fotoGaleria" src="/seu feito/turismo2/img/c1adb0b9-9e3e-4919-aba4-afdf073bbd8d.jpg" alt="Varanda do chalé à noite, com lua e serra ao fundo">
+        </button>
+      </div>
+    </section>
+
+    <section class="ficha">
+      <h2 class="secaoTitulo">Ficha do chalé</h2>
+      <div class="fichaLista">
+        <div class="fichaItem">
+          <h3 class="fichaTitulo">Tipo</h3>
+          <p class="fichaValor">Chalé inteiro</p>
+        </div>
+        <div class="fichaItem">
+          <h3 class="fichaTitulo">Hóspedes</h3>
+          <p class="fichaValor">Até 3</p>
+        </div>
+        <div class="fichaItem">
+          <h3 class="fichaTitulo">Quarto</h3>
+          <p class="fichaValor">1 quarto · 2 camas</p>
+        </div>
+        <div class="fichaItem">
+          <h3 class="fichaTitulo">Banheiro</h3>
+          <p class="fichaValor">1</p>
+        </div>
+        <div class="fichaItem">
+          <h3 class="fichaTitulo">Localização</h3>
+          <p class="fichaValor">A 7,6 km da Vila</p>
+        </div>
+        <div class="fichaItem">
+          <h3 class="fichaTitulo">Chegada</h3>
+          <p class="fichaValor">atendimento de entrada</p>
+        </div>
+        <div class="fichaItem">
+          <h3 class="fichaTitulo">Estacionamento</h3>
+          <p class="fichaValor">No local</p>
+        </div>
+        <div class="fichaItem">
+          <h3 class="fichaTitulo">Animais</h3>
+          <p class="fichaValor">Cães de até médio porte</p>
+        </div>
+        <div class="fichaItem">
+          <h3 class="fichaTitulo">Anfitrião</h3>
+          <p class="fichaValor">Paulo · Superhost · 4 anos</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="avaliacoes">
+      <div class="avaliacoesTopo">
+        <h2 class="secaoTitulo">Avaliações dos hóspedes</h2>
+        <p class="avaliacoesInfo">★ 5,0 · 18 avaliações · exibindo as 3 mais recentes</p>
+      </div>
+      <div class="listaAvaliacoes">
+
+        <article class="avaliacao">
+          <p class="estrelas">★★★★★</p>
+          <p class="avaliacaoTexto">Só gratidão, tudo foi maravilhoso, casa incrível 😍, tem cara de lar, não dá vontade de ir embora 😅.</p>
+          <p class="autor"><p class="autorNome">Ricardo Lima</b> · outubro de 2026</p>
+        </article>
+
+        <article class="avaliacao">
+          <p class="estrelas">★★★★★</p>
+          <p class="avaliacaoTexto">Espaço incrível - muito bonito e muito bem planejado para oferecer uma estadia extremamente confortável e funcional. 10/10!</p>
+          <p class="autor"><p class="autorNome">Camila Rocha</b> · agosto de 2026</p>
+        </article>
+
+        <article class="avaliacao">
+          <p class="estrelas">★★★★★</p>
+          <p class="avaliacaoTexto">Casa maravilhoso: limpo, cheiroso e confortável. Chuveiro quente, toalhas boas, cama confortável.</p>
+          <p class="autor"><p class="autorNome">Rafael</p> · julho de 2026</p>
+        </article>
+
+      </div>
+    </section>
+
+  </div>
+
+  <div class="visor" id="visor">
+    <button class="visorFechar" onclick="fecharFotos()">Fechar</button>
+    <button class="visorSeta visorAnterior" onclick="mudarFoto(-1)">‹</button>
+    <img class="visorImagem" id="visorImagem" src="" alt="">
+    <button class="visorSeta visorProximo" onclick="mudarFoto(1)">›</button>
+    <p class="visorContador" id="visorContador"></p>
+  </div>
+
+  <script src="script3.js"></script>
+</body>
+
+</html>
